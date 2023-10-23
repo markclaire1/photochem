@@ -564,9 +564,11 @@ contains
     character(len=100) :: tmp
     integer :: io, i, j
     real(dp) :: val, clip_value
-
+    
     if (clip) then
-      clip_value = 1.0e-40_dp
+      print*,'using var%clipval in out2atmosphere_txt_base'
+      print*,var%clipval
+      clip_value = var%clipval
     else
       clip_value = - huge(1.0_dp)
     endif

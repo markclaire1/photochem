@@ -179,5 +179,13 @@ cdef class PhotochemVars:
     def __set__(self, double val):
       var_pxd.photochemvars_fast_arbitrary_rate_set(&self._ptr, &val)
 
+  property clipval:
+    "clipping value used in out2atmosphere_txt"
+    def __get__(self):
+      cdef double val
+      var_pxd.photochemvars_clipval_get(&self._ptr, &val)
+      return val
+    def __set__(self, double val):
+      var_pxd.photochemvars_clipval_set(&self._ptr, &val)
     
   
