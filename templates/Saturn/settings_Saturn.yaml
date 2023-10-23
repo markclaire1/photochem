@@ -57,7 +57,7 @@ boundary-conditions:
 - name: He
   only-eddy: true
   lower-boundary: {type: mix, mix: 0.0325}
-  upper-boundary: {type: veff, veff: 0}
+  upper-boundary: {type: veff, veff: 0.0}
 - name: O
   lower-boundary: {type: Moses}
   upper-boundary: {type: flux, flux: -1.5E6}
@@ -75,7 +75,7 @@ boundary-conditions:
   upper-boundary: {type: flux, flux: -7.5E4}
 - name: CH4
   lower-boundary: {type: mix, mix: 4.50e-03}
-  upper-boundary: {type: veff, veff: 0}
+  upper-boundary: {type: veff, veff: 0.0}
 
 
       
