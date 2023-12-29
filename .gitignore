@@ -23,5 +23,6 @@ src/dependencies/modules
 
 julia_wrap_photochem.ipynb
 random.ipynb
-
-
+_skbuild/
+examples/outfile.dat
+photochem.egg-info/
